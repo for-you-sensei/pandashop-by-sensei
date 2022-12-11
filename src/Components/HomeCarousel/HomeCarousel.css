@@ -1,0 +1,14 @@
+#home-carousel {
+  width: 100%;
+  height: 650px;
+}
+
+.home-carousel-figure {
+  width: 100%;
+  height: 100%;
+}
+
+.home-carousel-figure > img {
+  width: 100%;
+  height: 100%;
+}
