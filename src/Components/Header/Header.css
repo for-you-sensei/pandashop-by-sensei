@@ -13,8 +13,9 @@
   color: #ffffff;
 }
 
-#header > p {
+#header > a {
   cursor: pointer;
+  color: #fff;
 }
 
 .header-nav {
@@ -39,11 +40,11 @@
 
 .header-figure {
   cursor: pointer;
-  height: 70%;
 }
 
-.header-figure > img {
-  height: 100%;
+.header-figure > svg {
+  width: 40px;
+  height: 40px;
 }
 
 @media (max-width: 1200px) {

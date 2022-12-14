@@ -1,13 +1,16 @@
 import React from "react";
 import "./Header.css";
-import search from "../../Assets/Icons/Header/search.svg";
-import basket from "../../Assets/Icons/Header/shopping-basket.svg";
-import user from "../../Assets/Icons/Header/user.svg";
+import { NavLink } from "react-router-dom";
+import SearchIcon from "@mui/icons-material/Search";
+import ShoppingCartIcon from "@mui/icons-material/ShoppingCart";
+import AccountCircleIcon from "@mui/icons-material/AccountCircle";
 
 export function Header() {
   return (
     <div id="header">
-      <p className="pandashop-text">PandaShop</p>
+      <NavLink to="/" className="pandashop-text">
+        PandaShop
+      </NavLink>
 
       <div className="header-nav">
         <p>Delivery</p>
@@ -16,15 +19,15 @@ export function Header() {
 
       <div className="header-icon">
         <figure className="header-figure">
-          <img src={search} alt="" />
+          <SearchIcon />
         </figure>
 
         <figure className="header-figure">
-          <img src={basket} alt="" />
+          <ShoppingCartIcon />
         </figure>
 
         <figure className="header-figure">
-          <img src={user} alt="" />
+          <AccountCircleIcon />
         </figure>
       </div>
     </div>

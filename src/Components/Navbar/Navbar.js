@@ -1,31 +1,43 @@
 import React from "react";
-import { NavLink } from "react-router-dom";
+import { NavLink, useNavigate } from "react-router-dom";
 import "./Navbar.css";
 
 export function Navbar() {
+  const navigate = useNavigate();
+
   return (
     <div id="navbar">
       <NavLink to="/new">New</NavLink>
 
-      <select className="nav-select">
+      <select
+        className="nav-select"
+        onChange={(e) => {
+          navigate(`/${e.target.value}`);
+        }}
+      >
         <option>Clothes</option>
-        <option>For Men</option>
-        <option>For Women</option>
-        <option>For Girls</option>
-        <option>For Children</option>
+        <option value="for_men">For Men</option>
+        <option value="for_women">For Women</option>
+        <option value="for_girls">For Girls</option>
+        <option value="for_childer">For Children</option>
       </select>
 
       <NavLink to="/discaunts">Discaunts</NavLink>
 
-      <select className="nav-select">
+      <select
+        className="nav-select"
+        onChange={(e) => {
+          navigate(`/${e.target.value}`);
+        }}
+      >
         <option>More</option>
-        <option>For Mobile</option>
-        <option>For Office</option>
-        <option>For Car</option>
-        <option>For Room</option>
+        <option value="for_mobile">For Mobile</option>
+        <option value="for_office">For Office</option>
+        <option value="for_car">For Car</option>
+        <option value="for_room">For Room</option>
       </select>
 
-      <NavLink to="/discaunts">Partner</NavLink>
+      <NavLink to="/partner">Partner</NavLink>
     </div>
   );
 }
