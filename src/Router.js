@@ -1,5 +1,6 @@
 import React from "react";
 import { Route, Routes } from "react-router-dom";
+import { Footer } from "./Components/Footer/Footer";
 import { Header } from "./Components/Header/Header";
 import { Navbar } from "./Components/Navbar/Navbar";
 import { Config } from "./Config/Config";
@@ -19,7 +20,7 @@ export function Router() {
         {/* <Route path="/" element={<Home />} /> */}
       </Routes>
 
-      {/* <Footer /> */}
+      <Footer />
       {/* <Loading /> */}
       <Config />
     </div>
