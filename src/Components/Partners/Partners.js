@@ -89,10 +89,11 @@ export function Partners() {
   // };
 
   return (
-    <div id="partner-carousel">
-      <p>Our Partners</p>
+    <div id="partner-carousel-box">
+      <div id="partner-carousel">
+        <p>Our Partners</p>
 
-      {/* <Slider {...settings} className="partner-slick">
+        {/* <Slider {...settings} className="partner-slick">
         {data.map((item) => {
           return (
             <figure key={item.id} className="partner-carousel-figure">
@@ -101,6 +102,7 @@ export function Partners() {
           );
         })}
       </Slider> */}
+      </div>
     </div>
   );
 }

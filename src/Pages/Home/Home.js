@@ -13,36 +13,42 @@ export function Home() {
       img: img1,
       name: "Koylak dvoyka",
       price: "120000",
+      discaunt: "0"
     },
     {
       id: 1,
       img: img2,
       name: "Koylak dvoyka",
       price: "90000",
+      discaunt: "10"
     },
     {
       id: 2,
       img: img1,
       name: "Koylak dvoyka",
       price: "120000",
+      discaunt: "0"
     },
     {
       id: 3,
       img: img2,
       name: "Koylak dvoyka",
       price: "90000",
+      discaunt: "10"
     },
     {
       id: 4,
       img: img1,
       name: "Koylak dvoyka",
       price: "120000",
+      discaunt: "5"
     },
     {
       id: 5,
       img: img2,
       name: "Koylak dvoyka",
       price: "90000",
+      discaunt: "10"
     },
   ];
 
@@ -52,36 +58,42 @@ export function Home() {
       img: img2,
       name: "Koylak dvoyka",
       price: "120000",
+      discaunt: "0"
     },
     {
       id: 1,
       img: img1,
       name: "Koylak dvoyka",
       price: "90000",
+      discaunt: "10"
     },
     {
       id: 2,
       img: img2,
       name: "Koylak dvoyka",
       price: "120000",
+      discaunt: "0"
     },
     {
       id: 3,
       img: img1,
       name: "Koylak dvoyka",
       price: "90000",
+      discaunt: "10"
     },
     {
       id: 4,
       img: img2,
       name: "Koylak dvoyka",
       price: "120000",
+      discaunt: "5"
     },
     {
       id: 5,
       img: img1,
       name: "Koylak dvoyka",
       price: "90000",
+      discaunt: "10"
     },
   ];
 
@@ -91,36 +103,42 @@ export function Home() {
       img: img1,
       name: "Koylak dvoyka",
       price: "120000",
+      discaunt: "0"
     },
     {
       id: 1,
       img: img2,
       name: "Koylak dvoyka",
       price: "90000",
+      discaunt: "10"
     },
     {
       id: 2,
       img: img1,
       name: "Koylak dvoyka",
       price: "120000",
+      discaunt: "0"
     },
     {
       id: 3,
       img: img2,
       name: "Koylak dvoyka",
       price: "90000",
+      discaunt: "10"
     },
     {
       id: 4,
       img: img1,
       name: "Koylak dvoyka",
       price: "120000",
+      discaunt: "5"
     },
     {
       id: 5,
       img: img2,
       name: "Koylak dvoyka",
       price: "90000",
+      discaunt: "10"
     },
   ];
 
@@ -135,5 +153,3 @@ export function Home() {
     </>
   );
 }
-
-// koroche ideani itidan. api berilganda daje maplarni props qilish (new arrivals, most popular...) hammasi bitta componentda bo'ladi. lekin 5 tasini o'rnini bosadi

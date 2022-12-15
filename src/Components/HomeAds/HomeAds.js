@@ -11,6 +11,15 @@ export function HomeAds({ data, name, link }) {
         {data.map((item) => {
           return (
             <div className="HomeAds-card" key={item.id}>
+              <div
+                className="HomeAds-discaunt"
+                style={
+                  item.discaunt > 0 ? { display: "flex" } : { display: "none" }
+                }
+              >
+                {item.discaunt}%
+              </div>
+
               <figure className="HomeAds-figure">
                 <img src={item.img} alt="" />
               </figure>
