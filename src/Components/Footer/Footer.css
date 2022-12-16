@@ -16,12 +16,11 @@
   justify-content: space-between;
   flex-wrap: wrap;
   padding: 50px 5%;
-  gap: 10px;
+  gap: 20px;
 }
 
 .footer-privacy {
-  width: 30%;
-
+  width: auto;
   display: flex;
   justify-content: space-between;
 }
@@ -91,4 +90,98 @@
 
 .axsi > span {
   color: #f44336;
+}
+
+@media (max-width: 950px) {
+  #footer-box {
+    margin-top: 100px;
+  }
+
+  #footer {
+    padding: 30px 5%;
+    gap: 20px;
+    flex-direction: column;
+    text-align: center;
+  }
+
+  .footer-privacy {
+    width: 100%;
+    justify-content: center;
+    flex-direction: column;
+    align-items: center;
+    gap: 30px;
+  }
+
+  .footer-logo {
+    width: 20%;
+  }
+
+  .footer-texts-1 {
+    width: 100%;
+    gap: 5%;
+  }
+
+  .footer-texts-2 {
+    gap: 5px;
+    align-items: center;
+  }
+
+  .axsi {
+    gap: 5px;
+  }
+}
+
+@media (max-width: 650px) {
+  #footer-box {
+    margin-top: 100px;
+  }
+
+  #footer {
+    padding: 30px 5%;
+    gap: 20px;
+  }
+
+  .footer-logo {
+    width: 40%;
+  }
+
+  .footer-privacy {
+    gap: 30px;
+  }
+
+  .footer-texts-2 {
+    gap: 5px;
+  }
+
+  .footer-texts-1 > :first-child {
+    font-size: 26px;
+  }
+
+  .footer-texts-1 > :nth-child(2) {
+    font-size: 16px;
+  }
+
+  .footer-texts-1 > :nth-child(3) {
+    font-size: 11px;
+  }
+
+  .footer-texts-1 > :nth-child(4) {
+    font-size: 11px;
+  }
+
+  .footer-texts-2 {
+    gap: 5px;
+  }
+
+  .footer-texts-2 > p {
+    font-size: 11px;
+  }
+
+  .footer-texts-2 > :first-child {
+    font-size: 26px;
+  }
+
+  .axsi {
+    gap: 5px;
+  }
 }

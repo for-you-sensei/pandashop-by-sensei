@@ -18,12 +18,11 @@
   flex-wrap: wrap;
   justify-content: center;
   align-items: center;
-  gap: 2%;
+  gap: 30px;
 }
 
 .HomeAds-card {
   position: relative;
-  margin-bottom: 40px;
   width: 400px;
   display: flex;
   flex-direction: column;
@@ -69,4 +68,109 @@
   font-size: 22px;
   line-height: 125%;
   color: #41416e;
+}
+
+@media (max-width: 950px) {
+  #HomeAds {
+    margin-top: 50px;
+  }
+
+  .HomeAds-container {
+    margin-top: 60px;
+    gap: 20px;
+  }
+
+  .HomeAds-card {
+    margin-bottom: 30px;
+    width: 48%;
+    font-size: 30px;
+  }
+
+  .HomeAds-discaunt {
+    width: 40px;
+    height: 40px;
+    font-size: 14px;
+  }
+
+  .HomeAds-card-last {
+    font-size: 20px;
+  }
+}
+
+@media (max-width: 650px) {
+  #HomeAds {
+    margin-top: 40px;
+  }
+
+  .HomeAds-container {
+    margin-top: 40px;
+    gap: 15px;
+  }
+
+  .HomeAds-card {
+    margin-bottom: 20px;
+    font-size: 26px;
+  }
+
+  .HomeAds-discaunt {
+    width: 40px;
+    height: 40px;
+    font-size: 14px;
+  }
+
+  .HomeAds-card-last {
+    font-size: 16px;
+  }
+}
+
+@media (max-width: 550px) {
+  #HomeAds {
+    margin-top: 30px;
+  }
+
+  .HomeAds-container {
+    margin-top: 20px;
+    gap: 10px;
+  }
+
+  .HomeAds-card {
+    margin-bottom: 20px;
+    font-size: 20px;
+  }
+
+  .HomeAds-discaunt {
+    width: 30px;
+    height: 30px;
+    font-size: 10px;
+  }
+
+  .HomeAds-card-last {
+    font-size: 14px;
+  }
+}
+
+@media (max-width: 450px) {
+  #HomeAds {
+    margin-top: 30px;
+  }
+
+  .HomeAds-container {
+    margin-top: 20px;
+    gap: 5px;
+  }
+
+  .HomeAds-card {
+    margin-bottom: 10px;
+    font-size: 14px;
+  }
+
+  .HomeAds-discaunt {
+    width: 30px;
+    height: 30px;
+    font-size: 10px;
+  }
+
+  .HomeAds-card-last {
+    font-size: 10px;
+  }
 }

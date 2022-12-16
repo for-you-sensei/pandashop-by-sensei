@@ -93,6 +93,11 @@
   .header-icon {
     gap: 10px;
   }
+
+  .header-figure > svg {
+    width: 30px;
+    height: 30px;
+  }
 }
 
 @media (max-width: 650px) {

@@ -1,19 +1,36 @@
-#navbar {
+#navbar-box {
   position: sticky;
   top: 0;
-  z-index: 9999;
+  z-index: 999;
   width: 100%;
   height: 74px;
-  background: #ffffff;
+  background-color: #fff;
 
   display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+#navbar {
+  max-width: 1920px;
+  width: 100%;
+  height: 100%;
+  display: flex;
   flex-direction: row;
+  align-items: center;
+  justify-content: space-between;
+  padding: 5%;
+}
+
+.navbar-selections {
+  width: 100%;
+  display: flex;
   align-items: center;
   justify-content: center;
   gap: 3%;
 }
 
-#navbar > a,
+.navbar-selections > a,
 select {
   color: #41416e;
 
@@ -29,4 +46,83 @@ select {
   border: none;
   outline: none;
   cursor: pointer;
+  z-index: 1;
+}
+
+#navbar-icons {
+  height: 100%;
+  display: none;
+  align-items: center;
+  justify-content: center;
+}
+
+.navbar-figure {
+  cursor: pointer;
+}
+
+.navbar-figure > svg {
+  width: 40px;
+  height: 40px;
+  color: #1976d2;
+}
+
+@media (max-width: 750px) {
+  #navbar-box {
+    height: 60px;
+  }
+
+  .navbar-selections > a,
+  select {
+    font-size: 16px;
+  }
+
+  .nav-select {
+    width: 90px;
+  }
+}
+
+@media (max-width: 650px) {
+  #navbar-box {
+    height: 60px;
+  }
+
+  .navbar-selections {
+    display: none;
+  }
+
+  #navbar-icons {
+    display: flex;
+    gap: 10px;
+  }
+
+  .navbar-figure > svg {
+    width: 30px;
+    height: 30px;
+  }
+}
+
+@media (max-width: 550px) {
+  #navbar-box {
+    height: 50px;
+  }
+
+  #navbar-icons {
+    gap: 5px;
+  }
+
+  .navbar-figure > svg {
+    width: 25px;
+    height: 25px;
+  }
+}
+
+@media (max-width: 450px) {
+  #navbar-box {
+    height: 40px;
+  }
+
+  .navbar-figure > svg {
+    width: 20px;
+    height: 20px;
+  }
 }

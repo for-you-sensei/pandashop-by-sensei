@@ -6,6 +6,21 @@ import ShoppingCartIcon from "@mui/icons-material/ShoppingCart";
 import AccountCircleIcon from "@mui/icons-material/AccountCircle";
 
 export function Header() {
+  const headerIcons = [
+    {
+      id: 0,
+      icon: <SearchIcon />,
+    },
+    {
+      id: 1,
+      icon: <ShoppingCartIcon />,
+    },
+    {
+      id: 2,
+      icon: <AccountCircleIcon />,
+    },
+  ];
+
   return (
     <div id="header-box">
       <div id="header">
@@ -19,17 +34,13 @@ export function Header() {
         </div>
 
         <div className="header-icon">
-          <figure className="header-figure">
-            <SearchIcon />
-          </figure>
-
-          <figure className="header-figure">
-            <ShoppingCartIcon />
-          </figure>
-
-          <figure className="header-figure">
-            <AccountCircleIcon />
-          </figure>
+          {headerIcons.map((item) => {
+            return (
+              <figure className="header-figure" key={item.id}>
+                {item.icon}
+              </figure>
+            );
+          })}
         </div>
       </div>
     </div>
