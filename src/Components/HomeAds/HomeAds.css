@@ -55,15 +55,16 @@
   color: #ffffff;
 }
 
-.HomeAds-fugire {
+.HomeAds-figure {
   width: 100%;
 }
 
-.HomeAds-fugire > img {
+.HomeAds-figure > img {
   width: 100%;
+  max-height: 500px;
 }
 
-.HomeAds-card :last-child {
+.HomeAds-card-last {
   font-weight: 500;
   font-size: 22px;
   line-height: 125%;

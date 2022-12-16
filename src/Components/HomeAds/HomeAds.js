@@ -24,7 +24,7 @@ export function HomeAds({ data, name, link }) {
                 <img src={item.img} alt="" />
               </figure>
               <p>{item.name}</p>
-              <p>{item.price} sum</p>
+              <p className="HomeAds-card-last">{item.price} sum</p>
             </div>
           );
         })}

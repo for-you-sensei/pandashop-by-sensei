@@ -22,18 +22,18 @@ export function Footer() {
 
         <div className="footer-texts-2">
           <p>Departments</p>
-          <p>Barcha maxsulotlar</p>
-          <p>Mening savatcham</p>
-          <p>Yangi maxsulotlar</p>
-          <p>Eng mashxurlari</p>
+          <p>All Products</p>
+          <p>My Cart</p>
+          <p>New Products</p>
+          <p>Most Popular</p>
         </div>
 
         <div className="footer-texts-2">
           <p>About Us</p>
-          <p>Biz bilan aloqa</p>
-          <p>Xamkorlik</p>
-          <p>Yetkazib berish</p>
-          <p>Manzil</p>
+          <p>Contact Us</p>
+          <p>Partners</p>
+          <p>Delivery</p>
+          <p>Address</p>
         </div>
 
         <div className="footer-texts-2">
