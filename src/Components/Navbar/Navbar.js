@@ -87,7 +87,10 @@ export function Navbar() {
           })}
         </div>
       </div>
-      <NavbarMenu />
+
+      <div className="navbar-menu">
+        <NavbarMenu />
+      </div>
     </div>
   );
 }

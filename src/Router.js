@@ -5,6 +5,8 @@ import { Header } from "./Components/Header/Header";
 import { Navbar } from "./Components/Navbar/Navbar";
 import { Config } from "./Config/Config";
 import { Home } from "./Pages/Home/Home";
+import { New } from "./Pages/New/New";
+import { Partner } from "./Pages/Partner/Partner";
 
 export function Router() {
   return (
@@ -14,8 +16,8 @@ export function Router() {
 
       <Routes>
         <Route path="/" element={<Home />} />
-        {/* <Route path="/" element={<Home />} /> */}
-        {/* <Route path="/" element={<Home />} /> */}
+        <Route path="/new" element={<New/>} />
+        <Route path="/partner" element={<Partner />} />
         {/* <Route path="/" element={<Home />} /> */}
         {/* <Route path="/" element={<Home />} /> */}
       </Routes>

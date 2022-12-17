@@ -1,0 +1,158 @@
+#partnerPage {
+  max-width: 1920px;
+  width: 100%;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  padding: 50px 5%;
+}
+
+.partnerPage-about {
+  font-weight: 500;
+  font-size: 24px;
+  line-height: 150%;
+  letter-spacing: 0.01em;
+  color: #41416e;
+}
+
+.partnerPage-contactUs {
+  margin-top: 30px;
+  width: 100%;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+}
+
+.partnerPage-contactUs > p {
+  font-weight: 500;
+  font-size: 36px;
+  line-height: 150%;
+  letter-spacing: 0.01em;
+  color: #41416e;
+}
+
+.partnerPage-container {
+  width: 80%;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+
+  font-weight: 500;
+  font-size: 36px;
+  line-height: 150%;
+  letter-spacing: 0.01em;
+  color: #41416e;
+}
+
+.partnerPage-card {
+  margin-top: 90px;
+}
+
+@media (max-width: 1250px) {
+  #partnerPage {
+    padding: 45px 5%;
+  }
+
+  .partnerPage-about {
+    font-size: 22px;
+  }
+
+  .partnerPage-contactUs {
+    margin-top: 25px;
+  }
+
+  .partnerPage-contactUs > p {
+    font-size: 34px;
+  }
+
+  .partnerPage-container {
+    width: 100%;
+    font-size: 34px;
+    flex-direction: column;
+    text-align: center;
+  }
+
+  .partnerPage-card {
+    margin-top: 40px;
+  }
+}
+
+@media (max-width: 750px) {
+  #partnerPage {
+    padding: 35px 5%;
+  }
+
+  .partnerPage-about {
+    font-size: 18px;
+  }
+
+  .partnerPage-contactUs {
+    margin-top: 20px;
+  }
+
+  .partnerPage-contactUs > p {
+    font-size: 28px;
+  }
+
+  .partnerPage-container {
+    font-size: 28px;
+  }
+
+  .partnerPage-card {
+    margin-top: 20px;
+  }
+}
+
+@media (max-width: 450px) {
+  #partnerPage {
+    padding: 20px 5%;
+  }
+
+  .partnerPage-about {
+    font-size: 14px;
+  }
+
+  .partnerPage-contactUs {
+    margin-top: 15px;
+  }
+
+  .partnerPage-contactUs > p {
+    font-size: 22px;
+  }
+
+  .partnerPage-container {
+    font-size: 22px;
+  }
+
+  .partnerPage-card {
+    margin-top: 10px;
+  }
+}
+
+@media (max-width: 450px) {
+  #partnerPage {
+    padding: 10px 5%;
+  }
+
+  .partnerPage-about {
+    font-size: 12px;
+  }
+
+  .partnerPage-contactUs {
+    margin-top: 10px;
+  }
+
+  .partnerPage-contactUs > p {
+    font-size: 18px;
+  }
+
+  .partnerPage-container {
+    font-size: 18px;
+  }
+
+  .partnerPage-card {
+    margin-top: 10px;
+  }
+}

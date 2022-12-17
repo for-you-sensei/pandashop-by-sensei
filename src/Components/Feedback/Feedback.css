@@ -1,10 +1,12 @@
 #feedback-box {
+  margin-top: 100px;
   width: 100%;
   height: 400px;
   display: flex;
   align-items: center;
   justify-content: center;
   background-color: #001e3c;
+  padding: 50px 0;
 }
 
 #feedback {
@@ -15,7 +17,6 @@
   flex-direction: column;
   align-items: center;
   justify-content: space-between;
-  padding: 50px 0;
 }
 
 #feedback > p {
@@ -47,12 +48,15 @@ input {
   color: #000000;
   border: none;
   outline: none;
+
+  border: 1px solid rgba(65, 65, 110, 0.7);
 }
 
 .feedback-form > textarea {
   width: 50%;
   height: 100%;
   padding: 10px;
+  border-radius: 10px 0px 0px 10px;
 }
 
 .feedback-form-inputs {
@@ -72,6 +76,10 @@ button {
   padding: 10px;
 }
 
+.feedback-form-inputs > :first-child {
+  border-radius: 0px 10px 0px 0px;
+}
+
 .feedback-form-inputs > button {
   font-weight: 500;
   font-size: 20px;
@@ -84,12 +92,9 @@ button {
   outline: none;
 }
 
-@media (max-width: 1100px) {
+@media (max-width: 1150px) {
   #feedback-box {
     height: 400px;
-  }
-
-  #feedback {
     padding: 40px 0;
   }
 
@@ -128,12 +133,9 @@ button {
   }
 }
 
-@media (max-width: 750px) {
+@media (max-width: 850px) {
   #feedback-box {
     height: auto;
-  }
-
-  #feedback {
     padding: 40px 0;
   }
 
@@ -158,6 +160,7 @@ button {
     width: 100%;
     height: 80%;
     padding: 10px;
+    border-radius: 10px 10px 0px 0px;
   }
 
   .feedback-form-inputs {
@@ -170,13 +173,17 @@ button {
     padding: 10px;
   }
 
+  .feedback-form-inputs > :first-child {
+    border-radius: 0px 0px 0px 0px;
+  }
+
   .feedback-form-inputs > button {
     font-size: 18px;
   }
 }
 
 @media (max-width: 550px) {
-  #feedback {
+  #feedback-box {
     padding: 20px 0;
   }
 
@@ -192,7 +199,7 @@ button {
 
   .feedback-form > textarea,
   input {
-    font-size: 12px;
+    font-size: 10px;
   }
 
   .feedback-form > textarea {
@@ -209,6 +216,6 @@ button {
   }
 
   .feedback-form-inputs > button {
-    font-size: 14px;
+    font-size: 12px;
   }
 }

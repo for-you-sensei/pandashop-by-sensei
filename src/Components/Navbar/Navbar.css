@@ -19,7 +19,7 @@
   flex-direction: row;
   align-items: center;
   justify-content: space-between;
-  padding: 5%;
+  padding: 0 2%;
 }
 
 .navbar-selections {
@@ -28,6 +28,10 @@
   align-items: center;
   justify-content: center;
   gap: 3%;
+}
+
+.navbar-selections > a.active {
+  color: #ff0000;
 }
 
 .navbar-selections > a,
