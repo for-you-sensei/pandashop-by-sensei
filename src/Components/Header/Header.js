@@ -29,8 +29,8 @@ export function Header() {
         </NavLink>
 
         <div className="header-nav">
-          <p>Delivery</p>
-          <p>Contact</p>
+          <NavLink to="/delivery">Delivery</NavLink>
+          <NavLink to="/contact">Contact</NavLink>
         </div>
 
         <div className="header-icon">

@@ -1,0 +1,39 @@
+#deliveryComponent {
+  width: 100%;
+  padding: 50px 15%;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  gap: 30px;
+}
+
+#deliveryComponent > p {
+  font-weight: 400;
+  font-size: 32px;
+  line-height: 150%;
+  letter-spacing: 0.01em;
+  color: #41416e;
+}
+
+@media (max-width: 750px) {
+  #deliveryComponent {
+    padding: 20px 10%;
+    gap: 20px;
+  }
+
+  #deliveryComponent > p {
+    font-size: 28px;
+  }
+}
+
+@media (max-width: 450px) {
+  #deliveryComponent {
+    padding: 10px 10%;
+    gap: 20px;
+  }
+
+  #deliveryComponent > p {
+    font-size: 22px;
+  }
+}

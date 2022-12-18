@@ -34,8 +34,9 @@
   color: #ff0000;
 }
 
-.navbar-selections > a,
-select {
+.navbar-selections,
+.drop-down-card,
+.sub-menu > a {
   color: #41416e;
 
   font-weight: 500;
@@ -70,14 +71,50 @@ select {
   color: #1976d2;
 }
 
+.drop-down-card > .sub-menu {
+  display: flex;
+  flex-direction: column;
+  position: absolute;
+  top: 54px;
+  opacity: 0;
+  gap: 10px;
+  box-shadow: #0000003d 0px 3px 8px;
+  background: #fff;
+  border-radius: 6px;
+  transition: all 0.1s ease;
+  visibility: hidden;
+  z-index: 15;
+  padding: 15px 0;
+  overflow: hidden;
+}
+
+.drop-down-card,
+.sub-menu > a {
+  padding: 5px 15px;
+
+  transition: all 0.3s ease-in-out;
+}
+
+.drop-down-card > .sub-menu > a:hover {
+  transform: scale(1.05);
+  background: #f5f5f5ff;
+  color: #4c4cbfff;
+}
+
+.drop-down-card:hover .sub-menu {
+  visibility: visible;
+  opacity: 1;
+  transform: translate(0, 0);
+}
+
 @media (max-width: 750px) {
   #navbar-box {
     height: 60px;
   }
 
-  .navbar-selections > a,
-  select {
-    font-size: 16px;
+  .navbar-selections .drop-down-card,
+  .sub-menu > a {
+    font-size: 20px;
   }
 
   .nav-select {

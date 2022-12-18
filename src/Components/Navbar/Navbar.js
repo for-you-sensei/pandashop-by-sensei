@@ -1,5 +1,5 @@
 import React from "react";
-import { NavLink, useNavigate } from "react-router-dom";
+import { NavLink } from "react-router-dom";
 import "./Navbar.css";
 import SearchIcon from "@mui/icons-material/Search";
 import ShoppingCartIcon from "@mui/icons-material/ShoppingCart";
@@ -10,7 +10,6 @@ import { NavbarMenu } from "./NavbarMenu";
 import MenuIcon from "@mui/icons-material/Menu";
 
 export function Navbar() {
-  const navigate = useNavigate();
   const dispatch = useDispatch();
   const menu = useSelector((state) => state.menu);
 
@@ -35,33 +34,27 @@ export function Navbar() {
         <div className="navbar-selections">
           <NavLink to="/new">New</NavLink>
 
-          <select
-            className="nav-select"
-            onChange={(e) => {
-              navigate(`/${e.target.value}`);
-            }}
-          >
-            <option>Clothes</option>
-            <option value="for_men">For Men</option>
-            <option value="for_women">For Women</option>
-            <option value="for_girls">For Girls</option>
-            <option value="for_children">For Children</option>
-          </select>
+          <div className="drop-down-card">
+            <NavLink to="/all_product">Clothes </NavLink>
+            <div className="sub-menu">
+              <NavLink to="/for_men">For Men</NavLink>
+              <NavLink to="/for_women">For Women</NavLink>
+              <NavLink to="/for_girl">For Girls</NavLink>
+              <NavLink to="/for_children">For Children</NavLink>
+            </div>
+          </div>
 
           <NavLink to="/discaunts">Discaunts</NavLink>
 
-          <select
-            className="nav-select"
-            onChange={(e) => {
-              navigate(`/${e.target.value}`);
-            }}
-          >
-            <option>More</option>
-            <option value="for_mobile">For Mobile</option>
-            <option value="for_office">For Office</option>
-            <option value="for_car">For Car</option>
-            <option value="for_room">For Room</option>
-          </select>
+          <div className="drop-down-card">
+            <NavLink to="/all_product">More </NavLink>
+            <div className="sub-menu">
+              <NavLink to="/for_mobile">For Mobile</NavLink>
+              <NavLink to="/for_office">For Office</NavLink>
+              <NavLink to="/for_car">For Car</NavLink>
+              <NavLink to="/for_room">For Room</NavLink>
+            </div>
+          </div>
 
           <NavLink to="/partner">Partner</NavLink>
         </div>

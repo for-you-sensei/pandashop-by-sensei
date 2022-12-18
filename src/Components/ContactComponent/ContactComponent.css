@@ -1,0 +1,174 @@
+#contactComponent {
+  margin-top: 40px;
+  max-width: 1920px;
+  width: 100%;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+}
+
+.contactComponent-address {
+  width: 100%;
+  padding: 0 10%;
+  text-align: center;
+}
+
+.contactComponent-text {
+  width: 100%;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  gap: 40px;
+
+  font-weight: 400;
+  font-size: 32px;
+  line-height: 130%;
+  color: #41416e;
+}
+
+.contactComponent-container {
+  width: 100%;
+  padding: 0 15%;
+  gap: 20px;
+  display: flex;
+  flex-direction: row;
+  flex-wrap: wrap;
+  align-items: center;
+  justify-content: space-between;
+}
+
+.contactComponent-links {
+  display: flex;
+  flex-direction: column;
+  gap: 10px;
+}
+
+.contactComponent-card {
+  display: flex;
+  align-items: center;
+  gap: 5px;
+}
+
+.contactComponent-card > p {
+  display: flex;
+  align-items: center;
+}
+
+.contactComponent-card > img {
+  width: 30px;
+  height: 30px;
+}
+
+@media (max-width: 1100px) {
+  #contactComponent {
+    margin-top: 30px;
+  }
+
+  .contactComponent-text {
+    gap: 20px;
+
+    font-size: 28px;
+  }
+
+  .contactComponent-container {
+    padding: 0 10%;
+    gap: 20px;
+  }
+
+  .contactComponent-card > img {
+    width: 30px;
+    height: 30px;
+  }
+}
+
+@media (max-width: 950px) {
+  #contactComponent {
+    margin-top: 20px;
+  }
+
+  .contactComponent-text {
+    gap: 20px;
+    font-size: 24px;
+  }
+
+  .contactComponent-container {
+    padding: 0 10%;
+    gap: 20px;
+  }
+
+  .contactComponent-card > img {
+    width: 25px;
+    height: 25px;
+  }
+}
+
+@media (max-width: 800px) {
+  #contactComponent {
+    margin-top: 10px;
+  }
+
+  .contactComponent-text {
+    gap: 20px;
+    font-size: 20px;
+  }
+
+  .contactComponent-container {
+    padding: 0 10%;
+    gap: 20px;
+  }
+
+  .contactComponent-links {
+    gap: 5px;
+  }
+
+  .contactComponent-card > img {
+    width: 20px;
+    height: 20px;
+  }
+}
+
+@media (max-width: 650px) {
+  #contactComponent {
+    margin-top: 10px;
+  }
+
+  .contactComponent-text {
+    gap: 20px;
+    font-size: 20px;
+  }
+
+  .contactComponent-container {
+    padding: 0;
+    gap: 20px;
+    flex-direction: column;
+  }
+
+  .contactComponent-links {
+    align-items: center;
+    justify-content: center;
+    gap: 5px;
+  }
+
+  .contactComponent-card > img {
+    width: 20px;
+    height: 20px;
+  }
+}
+
+@media (max-width: 450px) {
+  .contactComponent-text {
+    gap: 20px;
+    font-size: 18px;
+  }
+
+  .contactComponent-container {
+    gap: 15px;
+  }
+
+  .contactComponent-card > img {
+    width: 20px;
+    height: 20px;
+  }
+}
