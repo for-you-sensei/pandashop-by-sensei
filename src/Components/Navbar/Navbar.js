@@ -1,4 +1,4 @@
-import React from "react";
+import React, { useState } from "react";
 import { NavLink } from "react-router-dom";
 import "./Navbar.css";
 import SearchIcon from "@mui/icons-material/Search";
@@ -6,12 +6,17 @@ import ShoppingCartIcon from "@mui/icons-material/ShoppingCart";
 import AccountCircleIcon from "@mui/icons-material/AccountCircle";
 import { useDispatch, useSelector } from "react-redux";
 import { acMenu } from "../../Redux/MenuButton";
+import { acLogin } from "../../Redux/Login";
 import { NavbarMenu } from "./NavbarMenu";
 import MenuIcon from "@mui/icons-material/Menu";
 
 export function Navbar() {
+  const [profile, setProfile] = useState(false);
+  // const [logIn, setlogIn] = useState(false);
+
   const dispatch = useDispatch();
   const menu = useSelector((state) => state.menu);
+  const login = useSelector((state) => state.login);
 
   const headerIcons = [
     {
@@ -21,10 +26,6 @@ export function Navbar() {
     {
       id: 1,
       icon: <ShoppingCartIcon />,
-    },
-    {
-      id: 2,
-      icon: <AccountCircleIcon />,
     },
   ];
 
@@ -78,6 +79,30 @@ export function Navbar() {
               </figure>
             );
           })}
+
+          <figure
+            className="navbar-figure"
+            onClick={() => {
+              setProfile(!profile);
+            }}
+          >
+            <AccountCircleIcon />
+          </figure>
+
+          <div
+            className={
+              profile ? "login-register-show" : "login-register-show-invisible"
+            }
+          >
+            <button
+              onClick={() => {
+                dispatch(acLogin(!login));
+              }}
+            >
+              Log In
+            </button>
+            <button>Register</button>
+          </div>
         </div>
       </div>
 

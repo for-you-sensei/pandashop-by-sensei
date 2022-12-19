@@ -1,10 +1,12 @@
 import { configureStore } from "@reduxjs/toolkit";
 import { combineReducers } from "redux";
 import { reLoading } from "./Loading";
+import { reLogin } from "./Login";
 import { reMenu } from "./MenuButton";
 
 const reducer = combineReducers({
   loading: reLoading,
+  login: reLogin,
   menu: reMenu,
 });
 

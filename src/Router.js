@@ -9,6 +9,7 @@ import { New } from "./Pages/New/New";
 import { Delivery } from "./Pages/Delivery/Delivery";
 import { Contact } from "./Pages/Contact/Contact";
 import { Partner } from "./Pages/Partner/Partner";
+import { Login } from "./Components/Login/Login";
 
 export function Router() {
   return (
@@ -27,9 +28,12 @@ export function Router() {
         {/* <Route path="/" element={<Home />} /> */}
       </Routes>
 
+      <Login />
       <Footer />
       {/* <Loading /> */}
       <Config />
     </div>
   );
 }
+
+// login/register uchun redux kerak

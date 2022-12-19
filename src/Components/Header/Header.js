@@ -1,4 +1,4 @@
-import React from "react";
+import React, { useState } from "react";
 import "./Header.css";
 import { NavLink } from "react-router-dom";
 import SearchIcon from "@mui/icons-material/Search";
@@ -6,6 +6,7 @@ import ShoppingCartIcon from "@mui/icons-material/ShoppingCart";
 import AccountCircleIcon from "@mui/icons-material/AccountCircle";
 
 export function Header() {
+  const [profile, setProfile] = useState(false);
   const headerIcons = [
     {
       id: 0,
@@ -14,10 +15,6 @@ export function Header() {
     {
       id: 1,
       icon: <ShoppingCartIcon />,
-    },
-    {
-      id: 2,
-      icon: <AccountCircleIcon />,
     },
   ];
 
@@ -41,6 +38,24 @@ export function Header() {
               </figure>
             );
           })}
+
+          <figure
+            className="header-figure"
+            onClick={() => {
+              setProfile(!profile);
+            }}
+          >
+            <AccountCircleIcon />
+          </figure>
+
+          <div
+            className={
+              profile ? "login-register-show" : "login-register-show-invisible"
+            }
+          >
+            <button>Log In</button>
+            <button>Register</button>
+          </div>
         </div>
       </div>
     </div>
