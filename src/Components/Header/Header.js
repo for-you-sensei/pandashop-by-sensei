@@ -4,9 +4,15 @@ import { NavLink } from "react-router-dom";
 import SearchIcon from "@mui/icons-material/Search";
 import ShoppingCartIcon from "@mui/icons-material/ShoppingCart";
 import AccountCircleIcon from "@mui/icons-material/AccountCircle";
+import { useDispatch, useSelector } from "react-redux";
+import { acLogin } from "../../Redux/Login";
 
 export function Header() {
   const [profile, setProfile] = useState(false);
+  const dispatch = useDispatch();
+
+  const login = useSelector((state) => state.login);
+
   const headerIcons = [
     {
       id: 0,
@@ -53,7 +59,13 @@ export function Header() {
               profile ? "login-register-show" : "login-register-show-invisible"
             }
           >
-            <button>Log In</button>
+            <button
+              onClick={() => {
+                dispatch(acLogin(!login));
+              }}
+            >
+              Log In
+            </button>
             <button>Register</button>
           </div>
         </div>
