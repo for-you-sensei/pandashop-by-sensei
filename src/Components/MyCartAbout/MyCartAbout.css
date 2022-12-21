@@ -21,7 +21,7 @@
   color: #ffffff;
 }
 
-#myCartAbout :nth-child(2) {
+.your-orders {
   margin-top: 10px;
   font-weight: 500;
   font-size: 24px;

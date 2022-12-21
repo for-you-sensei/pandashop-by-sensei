@@ -11,6 +11,7 @@ import { Contact } from "./Pages/Contact/Contact";
 import { Partner } from "./Pages/Partner/Partner";
 import { Login } from "./Components/Login/Login";
 import { Cart } from "./Pages/Cart/Cart";
+import { Orders } from "./Pages/Orders/Orders";
 
 export function Router() {
   return (
@@ -27,6 +28,7 @@ export function Router() {
         <Route path="/delivery" element={<Delivery />} />
         <Route path="/contact" element={<Contact />} />
         <Route path="/my_cart" element={<Cart />} />
+        <Route path="/my_orders" element={<Orders />} />
         {/* <Route path="/" element={<Home />} /> */}
       </Routes>
 

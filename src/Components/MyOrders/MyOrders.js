@@ -1,11 +1,12 @@
 import React from "react";
-import "./MyCartOrders.css";
+import "./MyOrders.css";
 import DeleteForeverIcon from "@mui/icons-material/DeleteForever";
+import CheckCircleIcon from "@mui/icons-material/CheckCircle";
 
-export function MyCartOrders({ MyOrders }) {
+export function MyOrders({ Orders }) {
   return (
     <div id="myOrders">
-      {MyOrders.map((item) => {
+      {Orders.map((item) => {
         return (
           <div key={item.id} className="myOrders-card">
             <figure className="myOrders-figure">
@@ -30,8 +31,20 @@ export function MyCartOrders({ MyOrders }) {
               </p>
             </div>
 
-            <figure className="myOrders-delete" style={{ color: "#ff0000" }}>
-              <DeleteForeverIcon />
+            <div className="myOrders-status">
+              <p>
+                order status:{" "}
+                <span>{item.orderStatus ? "accepted" : "is expected"}</span>
+              </p>
+            </div>
+
+            <figure
+              className="myOrders-delete"
+              style={
+                item.orderStatus ? { color: "green" } : { color: "#ff0000" }
+              }
+            >
+              {item.orderStatus ? <CheckCircleIcon /> : <DeleteForeverIcon />}
             </figure>
           </div>
         );

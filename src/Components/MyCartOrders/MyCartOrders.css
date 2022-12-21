@@ -56,6 +56,21 @@
   color: #ff0000;
 }
 
+.myOrders-status {
+  padding: 10px 0;
+  height: 100%;
+
+  font-weight: 500;
+  font-size: 20px;
+  line-height: 120%;
+
+  color: rgba(65, 65, 110, 0.7);
+}
+
+.myOrders-status > p > span {
+  color: #41416e;
+}
+
 .myOrders-delete {
   cursor: pointer;
   position: absolute;
@@ -66,5 +81,4 @@
 .myOrders-delete > svg {
   width: 40px;
   height: 40px;
-  color: #ff0000;
 }
