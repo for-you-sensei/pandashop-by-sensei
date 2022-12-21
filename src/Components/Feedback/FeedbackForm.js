@@ -15,7 +15,6 @@ export function FeedbackForm() {
           allowEmptyFormatting
           mask="_"
           onValueChange={(e) => {
-            console.log();
             //   setPhone(e.floatValue);
           }}
         />

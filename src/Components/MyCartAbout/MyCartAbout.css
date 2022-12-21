@@ -1,0 +1,58 @@
+#myCartAbout {
+  width: 100%;
+  height: auto;
+  display: flex;
+  flex-direction: column;
+
+  gap: 12px;
+}
+
+#myCartAbout > button {
+  width: 70%;
+  background: #02a2b9;
+  border-radius: 6px;
+  border: none;
+  outline: none;
+
+  font-weight: 400;
+  font-size: 20px;
+  line-height: 24px;
+
+  color: #ffffff;
+}
+
+#myCartAbout :nth-child(2) {
+  margin-top: 10px;
+  font-weight: 500;
+  font-size: 24px;
+  line-height: 125%;
+  color: #41416e;
+}
+
+.myCartAbout-all-info {
+  font-weight: 500;
+  font-size: 24px;
+  line-height: 130%;
+  color: #41416eb3;
+}
+
+.myCartAbout-all-info > span {
+  color: #41416e;
+}
+
+#myCartAbout :nth-child(5) {
+  font-weight: 600;
+  font-size: 16px;
+  line-height: 120%;
+  letter-spacing: 0.055em;
+
+  color: #f44336;
+}
+
+#myCartAbout :nth-child(6) {
+  font-weight: 400;
+  font-size: 16px;
+  line-height: 140%;
+  letter-spacing: 0.055em;
+  color: #41416e;
+}

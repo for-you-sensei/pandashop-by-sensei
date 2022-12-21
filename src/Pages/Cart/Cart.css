@@ -1,0 +1,26 @@
+#cart {
+  max-width: 1920px;
+  width: 100%;
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  justify-content: space-between;
+  padding: 30px 2%;
+}
+
+.cart-orders {
+  width: 65%;
+}
+
+.cart-acions {
+  width: 30%;
+  height: 70vh;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+}
+
+.cart-form {
+  width: 60%;
+  height: 48%;
+}
