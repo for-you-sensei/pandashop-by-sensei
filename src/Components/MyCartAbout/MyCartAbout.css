@@ -9,6 +9,7 @@
 
 #myCartAbout > button {
   width: 70%;
+  height: 50px;
   background: #02a2b9;
   border-radius: 6px;
   border: none;
@@ -16,7 +17,7 @@
 
   font-weight: 400;
   font-size: 20px;
-  line-height: 24px;
+  line-height: 120%;
 
   color: #ffffff;
 }
@@ -40,7 +41,28 @@
   color: #41416e;
 }
 
-#myCartAbout :nth-child(5) {
+.myCart-userInfo {
+  display: flex;
+  flex-direction: column;
+  gap: 10px;
+
+  font-weight: 500;
+  font-size: 24px;
+  line-height: 125%;
+  color: #41416e;
+}
+
+.myCart-userInfo > p {
+  display: flex;
+  align-items: center;
+  gap: 10px;
+}
+
+.myCart-userInfo > p > svg {
+  height: 100%;
+}
+
+.myCart-alert :nth-child(1) {
   font-weight: 600;
   font-size: 16px;
   line-height: 120%;
@@ -49,10 +71,136 @@
   color: #f44336;
 }
 
-#myCartAbout :nth-child(6) {
+.myCart-alert :nth-child(2) {
+  margin-top: 12px;
   font-weight: 400;
   font-size: 16px;
   line-height: 140%;
   letter-spacing: 0.055em;
   color: #41416e;
+}
+
+@media (max-width: 1400px) {
+  #myCartAbout {
+    gap: 8px;
+  }
+
+  #myCartAbout > button {
+    width: 100%;
+    height: 45px;
+    font-size: 18px;
+  }
+
+  .your-orders {
+    margin-top: 5px;
+    font-size: 22px;
+  }
+
+  .myCartAbout-all-info {
+    font-size: 22px;
+  }
+
+  .myCart-userInfo {
+    gap: 6px;
+    font-size: 22px;
+  }
+
+  .myCart-userInfo > p {
+    gap: 5px;
+  }
+
+  .myCart-alert :nth-child(1) {
+    font-size: 14px;
+  }
+
+  .myCart-alert :nth-child(2) {
+    margin-top: 10px;
+    font-size: 14px;
+  }
+}
+
+@media (max-width: 1400px) {
+  #myCartAbout {
+    gap: 8px;
+    align-items: center;
+  }
+
+  #myCartAbout > button {
+    width: 50%;
+    height: 40px;
+  }
+
+  .myCart-userInfo {
+    align-items: center;
+  }
+}
+
+@media (max-width: 650px) {
+  #myCartAbout {
+    gap: 5px;
+  }
+
+  #myCartAbout > button {
+    width: 70%;
+    height: 40px;
+    font-size: 16px;
+  }
+
+  .your-orders {
+    margin-top: 5px;
+    font-size: 20px;
+  }
+
+  .myCartAbout-all-info {
+    font-size: 20px;
+  }
+
+  .myCart-userInfo {
+    gap: 6px;
+    font-size: 20px;
+  }
+
+  .myCart-alert :nth-child(1) {
+    font-size: 12px;
+  }
+
+  .myCart-alert :nth-child(2) {
+    margin-top: 10px;
+    font-size: 12px;
+  }
+}
+
+@media (max-width: 450px) {
+  #myCartAbout {
+    gap: 5px;
+  }
+
+  #myCartAbout > button {
+    width: 80%;
+    height: 40px;
+    font-size: 14px;
+  }
+
+  .your-orders {
+    margin-top: 5px;
+    font-size: 16px;
+  }
+
+  .myCartAbout-all-info {
+    font-size: 16px;
+  }
+
+  .myCart-userInfo {
+    gap: 6px;
+    font-size: 16px;
+  }
+
+  .myCart-alert :nth-child(1) {
+    font-size: 10px;
+  }
+
+  .myCart-alert :nth-child(2) {
+    margin-top: 10px;
+    font-size: 10px;
+  }
 }

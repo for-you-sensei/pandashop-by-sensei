@@ -25,14 +25,16 @@ export function MyCartAbout({ MyOrders }) {
         total cost: <span> Not ready</span>
       </p>
 
-      <p>Alert!!!</p>
+      <div className="myCart-alert">
+        <p>Alert!!!</p>
 
-      <p>
-        It will be delivered to your home via KARGO within 15 working days from
-        the day of receipt of the order. In order for the order to be accepted,
-        you will need to make a 50% payment in advance. Refunds will be made for
-        undelivered or lost products
-      </p>
+        <p>
+          It will be delivered to your home via KARGO within 15 working days
+          from the day of receipt of the order. In order for the order to be
+          accepted, you will need to make a 50% payment in advance. Refunds will
+          be made for undelivered or lost products
+        </p>
+      </div>
     </div>
   );
 }

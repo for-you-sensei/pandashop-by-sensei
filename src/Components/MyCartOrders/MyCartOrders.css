@@ -22,7 +22,7 @@
 }
 
 .myOrders-figure {
-  width: 8%;
+  width: 100px;
   height: 100%;
   border-radius: 10px 0 0 10px;
   overflow: hidden;
@@ -81,4 +81,163 @@
 .myOrders-delete > svg {
   width: 40px;
   height: 40px;
+}
+
+.myOrders-status-media {
+  display: none;
+}
+
+@media (max-width: 1400px) {
+  #myOrders {
+    height: 70vh;
+    gap: 10px;
+  }
+
+  .myOrders-card {
+    height: 120px;
+    gap: 20px;
+  }
+
+  .myOrders-figure {
+    width: 100px;
+  }
+
+  .myOrders-info {
+    gap: 5px;
+    padding: 10px 0;
+    font-size: 18px;
+  }
+
+  .myOrders-info p :nth-child(1) {
+    font-size: 18px;
+  }
+
+  .myOrders-status {
+    padding: 10px 0;
+    font-size: 18px;
+  }
+
+  .myOrders-delete > svg {
+    width: 30px;
+    height: 30px;
+  }
+}
+
+@media (max-width: 750px) {
+  #myOrders {
+    height: 50vh;
+    gap: 10px;
+  }
+
+  .myOrders-card {
+    height: 100px;
+    gap: 10px;
+  }
+
+  .myOrders-figure {
+    width: 80px;
+  }
+
+  .myOrders-info {
+    gap: 5px;
+    padding: 5px 0;
+    font-size: 14px;
+  }
+
+  .myOrders-info p :nth-child(1) {
+    font-size: 14px;
+  }
+
+  .myOrders-status {
+    padding: 10px 0;
+    font-size: 14px;
+  }
+
+  .myOrders-delete > svg {
+    width: 25px;
+    height: 25px;
+  }
+}
+
+@media (max-width: 600px) {
+  #myOrders {
+    height: 50vh;
+    gap: 10px;
+  }
+
+  .myOrders-card {
+    height: 150px;
+    gap: 10px;
+  }
+
+  .myOrders-figure {
+    width: 90px;
+  }
+
+  .myOrders-info {
+    gap: 5px;
+    padding: 5px 0;
+    font-size: 12px;
+  }
+
+  .myOrders-info p :nth-child(1) {
+    font-size: 12px;
+  }
+
+  .myOrders-status {
+    display: none;
+  }
+
+  .myOrders-status-media {
+    display: flex;
+    font-size: 12px;
+  }
+
+  .myOrders-delete > svg {
+    width: 25px;
+    height: 25px;
+  }
+}
+
+@media (max-width: 450px) {
+  #myOrders {
+    height: 50vh;
+    gap: 10px;
+  }
+
+  .myOrders-card {
+    width: 80%;
+    height: auto;
+    flex-direction: column;
+  }
+
+  .myOrders-figure {
+    border-radius: 0;
+    width: 100%;
+  }
+
+  .myOrders-info {
+    width: 100%;
+    padding: 10px;
+
+    font-size: 14px;
+  }
+
+  .myOrders-info p :nth-child(1) {
+    font-size: 14px;
+  }
+
+  .myOrders-status-media {
+    display: flex;
+    font-size: 14px;
+  }
+
+  .myOrders-delete {
+    bottom: 1%;
+  }
+
+  .myOrders-delete > svg {
+    width: 25px;
+    height: 25px;
+  }
 }

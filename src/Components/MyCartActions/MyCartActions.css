@@ -44,3 +44,57 @@ textarea {
 
   color: #ffffff;
 }
+
+@media (max-width: 1400px) {
+  #myCartActions {
+    gap: 10px;
+  }
+
+  #myCartActions > input,
+  textarea {
+    padding: 3%;
+    height: 50px;
+    font-size: 14px;
+  }
+
+  .myCartAvtions-submit {
+    height: 50px;
+    font-size: 16px;
+  }
+}
+
+@media (max-width: 650px) {
+  #myCartActions {
+    gap: 10px;
+  }
+
+  #myCartActions > input,
+  textarea {
+    padding: 3%;
+    height: 45px;
+    font-size: 14px;
+  }
+
+  .myCartAvtions-submit {
+    height: 45px;
+    font-size: 14px;
+  }
+}
+
+@media (max-width: 450px) {
+  #myCartActions {
+    gap: 5px;
+  }
+
+  #myCartActions > input,
+  textarea {
+    padding: 3%;
+    height: 40px;
+    font-size: 12px;
+  }
+
+  .myCartAvtions-submit {
+    height: 40px;
+    font-size: 12px;
+  }
+}

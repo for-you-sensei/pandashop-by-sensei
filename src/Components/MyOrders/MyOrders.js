@@ -1,5 +1,4 @@
 import React from "react";
-import "./MyOrders.css";
 import DeleteForeverIcon from "@mui/icons-material/DeleteForever";
 import CheckCircleIcon from "@mui/icons-material/CheckCircle";
 
@@ -29,6 +28,13 @@ export function MyOrders({ Orders }) {
               <p>
                 season: <span>{item.season}</span>
               </p>
+
+              <div className="myOrders-status-media">
+                <p>
+                  order status:{" "}
+                  <span>{item.orderStatus ? "accepted" : "is expected"}</span>
+                </p>
+              </div>
             </div>
 
             <div className="myOrders-status">

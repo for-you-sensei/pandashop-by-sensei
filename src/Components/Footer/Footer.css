@@ -133,7 +133,7 @@
 
 @media (max-width: 650px) {
   #footer-box {
-    margin-top: 100px;
+    margin-top: 80px;
   }
 
   #footer {
@@ -142,7 +142,7 @@
   }
 
   .footer-logo {
-    width: 40%;
+    width: 25%;
   }
 
   .footer-privacy {
