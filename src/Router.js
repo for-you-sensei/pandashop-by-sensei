@@ -12,6 +12,8 @@ import { Partner } from "./Pages/Partner/Partner";
 import { Login } from "./Components/Login/Login";
 import { Cart } from "./Pages/Cart/Cart";
 import { Orders } from "./Pages/Orders/Orders";
+import { MyProfile } from "./Pages/MyProfile/MyProfile";
+import { Products } from "./Pages/Products/Products";
 
 export function Router() {
   return (
@@ -23,12 +25,14 @@ export function Router() {
 
       <Routes>
         <Route path="/" element={<Home />} />
+        <Route path="/all_products" element={<Products />} />
         <Route path="/new" element={<New />} />
         <Route path="/partner" element={<Partner />} />
         <Route path="/delivery" element={<Delivery />} />
         <Route path="/contact" element={<Contact />} />
         <Route path="/my_cart" element={<Cart />} />
         <Route path="/my_orders" element={<Orders />} />
+        <Route path="/my_profile" element={<MyProfile />} />
         {/* <Route path="/" element={<Home />} /> */}
       </Routes>
 

@@ -56,7 +56,7 @@ export function NewProducts() {
 
       <div className="newProducts-form">
         <div id="feedback">
-          <FeedbackForm />
+          <FeedbackForm backgroundColor="#d9d9d933" />
         </div>
       </div>
     </div>

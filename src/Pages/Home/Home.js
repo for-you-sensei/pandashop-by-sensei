@@ -13,42 +13,42 @@ export function Home() {
       img: img1,
       name: "Koylak dvoyka",
       price: "120000",
-      discaunt: "0"
+      discaunt: "0",
     },
     {
       id: 1,
       img: img2,
       name: "Koylak dvoyka",
       price: "90000",
-      discaunt: "10"
+      discaunt: "10",
     },
     {
       id: 2,
       img: img1,
       name: "Koylak dvoyka",
       price: "120000",
-      discaunt: "0"
+      discaunt: "0",
     },
     {
       id: 3,
       img: img2,
       name: "Koylak dvoyka",
       price: "90000",
-      discaunt: "10"
+      discaunt: "10",
     },
     {
       id: 4,
       img: img1,
       name: "Koylak dvoyka",
       price: "120000",
-      discaunt: "5"
+      discaunt: "5",
     },
     {
       id: 5,
       img: img2,
       name: "Koylak dvoyka",
       price: "90000",
-      discaunt: "10"
+      discaunt: "10",
     },
   ];
 
@@ -58,42 +58,42 @@ export function Home() {
       img: img2,
       name: "Koylak dvoyka",
       price: "120000",
-      discaunt: "0"
+      discaunt: "0",
     },
     {
       id: 1,
       img: img1,
       name: "Koylak dvoyka",
       price: "90000",
-      discaunt: "10"
+      discaunt: "10",
     },
     {
       id: 2,
       img: img2,
       name: "Koylak dvoyka",
       price: "120000",
-      discaunt: "0"
+      discaunt: "0",
     },
     {
       id: 3,
       img: img1,
       name: "Koylak dvoyka",
       price: "90000",
-      discaunt: "10"
+      discaunt: "10",
     },
     {
       id: 4,
       img: img2,
       name: "Koylak dvoyka",
       price: "120000",
-      discaunt: "5"
+      discaunt: "5",
     },
     {
       id: 5,
       img: img1,
       name: "Koylak dvoyka",
       price: "90000",
-      discaunt: "10"
+      discaunt: "10",
     },
   ];
 
@@ -103,42 +103,42 @@ export function Home() {
       img: img1,
       name: "Koylak dvoyka",
       price: "120000",
-      discaunt: "0"
+      discaunt: "0",
     },
     {
       id: 1,
       img: img2,
       name: "Koylak dvoyka",
       price: "90000",
-      discaunt: "10"
+      discaunt: "10",
     },
     {
       id: 2,
       img: img1,
       name: "Koylak dvoyka",
       price: "120000",
-      discaunt: "0"
+      discaunt: "0",
     },
     {
       id: 3,
       img: img2,
       name: "Koylak dvoyka",
       price: "90000",
-      discaunt: "10"
+      discaunt: "10",
     },
     {
       id: 4,
       img: img1,
       name: "Koylak dvoyka",
       price: "120000",
-      discaunt: "5"
+      discaunt: "5",
     },
     {
       id: 5,
       img: img2,
       name: "Koylak dvoyka",
       price: "90000",
-      discaunt: "10"
+      discaunt: "10",
     },
   ];
 
@@ -148,7 +148,7 @@ export function Home() {
       <HomeAds data={News} name="New Products" link="/new" />
       <Partners />
       <HomeAds data={MostPopular} name="Most Popular" link="/most_popular" />
-      <Feedback />
+      <Feedback backgroundColor="#fff" />
       <HomeAds data={Discaunts} name="Discaunts" link="/discaunts" />
     </>
   );

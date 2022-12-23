@@ -36,7 +36,7 @@ export function Navbar() {
           <NavLink to="/new">New</NavLink>
 
           <div className="drop-down-card">
-            <NavLink to="/all_product">Clothes </NavLink>
+            <NavLink to="/all_products">Clothes </NavLink>
             <div className="sub-menu">
               <NavLink to="/for_men">For Men</NavLink>
               <NavLink to="/for_women">For Women</NavLink>
@@ -48,7 +48,7 @@ export function Navbar() {
           <NavLink to="/discaunts">Discaunts</NavLink>
 
           <div className="drop-down-card">
-            <NavLink to="/all_product">More </NavLink>
+            <NavLink to="/all_products">More </NavLink>
             <div className="sub-menu">
               <NavLink to="/for_mobile">For Mobile</NavLink>
               <NavLink to="/for_office">For Office</NavLink>
