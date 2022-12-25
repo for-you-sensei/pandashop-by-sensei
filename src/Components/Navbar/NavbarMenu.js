@@ -47,18 +47,6 @@ export function NavbarMenu() {
         anchor="left"
       >
         <List id="List" className="drawer">
-          {/* <figure
-            className="nav-logo-drawer"
-            onClick={(e) => {
-              e.preventDefault();
-              navigate("/");
-              window.scrollTo(0, 0);
-              setOpen(false);
-            }}
-          >
-            <MenuIcon/>
-          </figure> */}
-
           {links.map((item) => {
             return (
               <NavLink to={item.link} key={item.id}>

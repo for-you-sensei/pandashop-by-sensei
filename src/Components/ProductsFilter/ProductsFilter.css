@@ -1,5 +1,6 @@
 #ProductsFilter {
-  width: 40%;
+  margin-top: 50px;
+  width: 30%;
   height: 55px;
   display: flex;
   flex-direction: row;
@@ -43,6 +44,11 @@ button {
   padding: 0 2%;
   border-radius: 10px 0 0 10px;
   width: 85%;
+
+  font-weight: 400;
+  font-size: 15px;
+  line-height: 120%;
+  color: #41416e80;
 }
 
 .ProductsFilter-form > button {
@@ -54,4 +60,103 @@ button {
   height: 100%;
   width: 100%;
   color: #41416ed8;
+}
+
+@media (max-width: 1300px) {
+  #ProductsFilter {
+    margin-top: 40px;
+
+    width: 40%;
+    height: 45px;
+  }
+
+  .ProductsFilter-filter {
+    width: 45px;
+  }
+
+  .ProductsFilter-form {
+    width: 80%;
+  }
+
+  .ProductsFilter-form > input {
+    font-size: 14px;
+  }
+}
+
+@media (max-width: 950px) {
+  #ProductsFilter {
+    margin-top: 30px;
+
+    width: 60%;
+    height: 50px;
+  }
+
+  .ProductsFilter-filter {
+    width: 50px;
+  }
+
+  .ProductsFilter-form {
+    width: 85%;
+  }
+
+  .ProductsFilter-form > input {
+    font-size: 14px;
+  }
+}
+
+@media (max-width: 700px) {
+  #ProductsFilter {
+    margin-top: 20px;
+    width: 60%;
+    height: 45px;
+  }
+
+  .ProductsFilter-filter {
+    width: 45px;
+  }
+
+  .ProductsFilter-form {
+    width: 85%;
+  }
+
+  .ProductsFilter-form > input {
+    font-size: 12px;
+  }
+}
+
+@media (max-width: 550px) {
+  #ProductsFilter {
+    margin-top: 10px;
+    width: 70%;
+    height: 35px;
+  }
+
+  .ProductsFilter-filter {
+    padding: 2%;
+    width: 12%;
+  }
+
+  .ProductsFilter-form {
+    width: 85%;
+  }
+
+  .ProductsFilter-form > input {
+    font-size: 10px;
+  }
+
+  .ProductsFilter-form > button {
+    padding: 2%;
+    width: 15%;
+  }
+}
+
+@media (max-width: 400px) {
+  #ProductsFilter {
+    width: 90%;
+    height: 30px;
+  }
+
+  .ProductsFilter-form > input {
+    font-size: 10px;
+  }
 }
