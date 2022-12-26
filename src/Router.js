@@ -14,9 +14,14 @@ import { Cart } from "./Pages/Cart/Cart";
 import { Orders } from "./Pages/Orders/Orders";
 import { MyProfile } from "./Pages/MyProfile/MyProfile";
 import { Products } from "./Pages/Products/Products";
-import { ForMen } from "./Pages/For_Men/For_Men";
+// import { ForMen } from "./Pages/For_Men/For_Men";
+import { useSelector } from "react-redux";
 
 export function Router() {
+  const product = useSelector((state) => state.product);
+
+  const forMen = product.filter((item) => item.for_whom === "men");
+
   return (
     <div id="router">
       <div className="router-nav">
@@ -26,8 +31,9 @@ export function Router() {
 
       <Routes>
         <Route path="/" element={<Home />} />
-        <Route path="/all_products" element={<Products />} />
-        <Route path="/for_men" element={<ForMen />} />
+        <Route path="/all_products" element={<Products data={product} />} />
+        <Route path="/for_men" element={<Products data={forMen} />} />
+        {/* <Route path="/for_men" element={<ForMen />} /> */}
         <Route path="/new" element={<New />} />
         <Route path="/partner" element={<Partner />} />
         <Route path="/delivery" element={<Delivery />} />

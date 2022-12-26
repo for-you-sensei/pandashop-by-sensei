@@ -5,7 +5,6 @@ import { Partners } from "../../Components/Partners/Partners";
 import img1 from "../../Assets/Images/new arrival1.png";
 import img2 from "../../Assets/Images/new arrival2.png";
 import { Feedback } from "../../Components/Feedback/Feedback";
-import { useSelector } from "react-redux";
 
 export function Home() {
   const News = [
@@ -142,8 +141,6 @@ export function Home() {
       discaunt: "10",
     },
   ];
-
-
 
   return (
     <>
