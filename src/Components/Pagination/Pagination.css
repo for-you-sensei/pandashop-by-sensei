@@ -1,0 +1,31 @@
+.pagination_btns {
+  margin-top: 50px;
+  width: 100%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  gap: 10px;
+}
+
+.pagination_btns > li {
+  list-style: none;
+  cursor: pointer;
+  width: 30px;
+  height: 30px;
+  font-size: 14px;
+  border-radius: 50%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  border: 1px solid #41416e;
+  /* color: #41416e; */
+}
+
+.pagination_active {
+  background: #41416e;
+  color: #fff ;
+}
+
+.pagination_disabled {
+  visibility: hidden;
+}

@@ -1,19 +1,18 @@
 import React from "react";
-import "./Products.css";
 import { ProductsFilter } from "../../Components/ProductsFilter/ProductsFilter";
 import { useSelector } from "react-redux";
 import Pagination from "../../Components/Pagination/Pagination";
 
-export function Products() {
+export function ForMen() {
   const product = useSelector((state) => state.product);
 
-  // const newData = product.filter((item) => item.for_whom === "women");
+  const forMen = product.filter((item) => item.for_whom === "men");
 
   return (
     <div id="products">
       <ProductsFilter />
 
-      <Pagination data={product} />
+      <Pagination data={forMen} />
     </div>
   );
 }
