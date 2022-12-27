@@ -40,7 +40,7 @@ export function Navbar() {
             <div className="sub-menu">
               <NavLink to="/for_men">For Men</NavLink>
               <NavLink to="/for_women">For Women</NavLink>
-              <NavLink to="/for_girl">For Girls</NavLink>
+              <NavLink to="/for_girls">For Girls</NavLink>
               <NavLink to="/for_children">For Children</NavLink>
             </div>
           </div>

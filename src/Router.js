@@ -22,6 +22,12 @@ export function Router() {
 
   const forMen = product.filter((item) => item.for_whom === "men");
 
+  const forWomen = product.filter((item) => item.for_whom === "women");
+
+  const forGirls = product.filter((item) => item.for_whom === "women");
+
+  const forChildren = product.filter((item) => item.for_whom === "children");
+
   return (
     <div id="router">
       <div className="router-nav">
@@ -33,6 +39,9 @@ export function Router() {
         <Route path="/" element={<Home />} />
         <Route path="/all_products" element={<Products data={product} />} />
         <Route path="/for_men" element={<Products data={forMen} />} />
+        <Route path="/for_women" element={<Products data={forWomen} />} />
+        <Route path="/for_girls" element={<Products data={forGirls} />} />
+        <Route path="/for_children" element={<Products data={forChildren} />} />
         {/* <Route path="/for_men" element={<ForMen />} /> */}
         <Route path="/new" element={<New />} />
         <Route path="/partner" element={<Partner />} />
@@ -51,3 +60,7 @@ export function Router() {
     </div>
   );
 }
+
+// register, login, forgot password, search, product fillter, product view
+
+// my profile + update pass
