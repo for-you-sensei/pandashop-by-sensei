@@ -1,0 +1,84 @@
+#NotFoundPage {
+  max-width: 1920px;
+  width: 100%;
+  min-height: 80vh;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  text-align: center;
+  gap: 20px;
+  padding: 0 10%;
+}
+
+#NotFoundPage > :first-child {
+  color: #ff0000;
+  font-weight: 800;
+  font-size: 50px;
+  line-height: 110%;
+}
+
+#NotFoundPage > :nth-child(2) {
+  color: #00bfff;
+  font-weight: 400;
+  font-size: 40px;
+  line-height: 120%;
+}
+
+#NotFoundPage > button {
+  margin-top: 10px;
+  width: 50%;
+  height: 50px;
+  border-radius: 10px;
+  border: none;
+  outline: none;
+  background-color: #009800;
+
+  font-weight: 600;
+  font-size: 20px;
+  line-height: 120%;
+
+  color: #fff;
+}
+
+#NotFoundPage > button:hover {
+  background-color: #00bfff;
+}
+
+@media (max-width: 800px) {
+  #NotFoundPage {
+    gap: 10px;
+  }
+
+  #NotFoundPage > :first-child {
+    font-size: 40px;
+  }
+
+  #NotFoundPage > :nth-child(2) {
+    font-size: 30px;
+  }
+
+  #NotFoundPage > button {
+    margin-top: 10px;
+    width: 80%;
+    height: 50px;
+    font-size: 18px;
+  }
+}
+
+@media (max-width: 500px) {
+  #NotFoundPage > :first-child {
+    font-size: 30px;
+  }
+
+  #NotFoundPage > :nth-child(2) {
+    font-size: 20px;
+  }
+
+  #NotFoundPage > button {
+    margin-top: 10px;
+    width: 100%;
+    height: 40px;
+    font-size: 16px;
+  }
+}

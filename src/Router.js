@@ -18,6 +18,7 @@ import { Products } from "./Pages/Products/Products";
 import { useSelector } from "react-redux";
 import { Register } from "./Components/Register/Register";
 import { ForgotPassword } from "./Components/ForgotPassword/ForgotPassword";
+import { NotFoundPage } from "./Components/NotFoundPage/NotFoundPage";
 
 export function Router() {
   const product = useSelector((state) => state.product);
@@ -30,6 +31,34 @@ export function Router() {
 
   const forChildren = product.filter((item) => item.for_whom === "children");
 
+  const clothesPages = [
+    {
+      id: 0,
+      path: "/all_products",
+      data: product,
+    },
+    {
+      id: 1,
+      path: "for_men",
+      data: forMen,
+    },
+    {
+      id: 2,
+      path: "for_women",
+      data: forWomen,
+    },
+    {
+      id: 3,
+      path: "for_girls",
+      data: forGirls,
+    },
+    {
+      id: 4,
+      path: "for_children",
+      data: forChildren,
+    },
+  ];
+
   return (
     <div id="router">
       <div className="router-nav">
@@ -39,12 +68,16 @@ export function Router() {
 
       <Routes>
         <Route path="/" element={<Home />} />
-        <Route path="/all_products" element={<Products data={product} />} />
-        <Route path="/for_men" element={<Products data={forMen} />} />
-        <Route path="/for_women" element={<Products data={forWomen} />} />
-        <Route path="/for_girls" element={<Products data={forGirls} />} />
-        <Route path="/for_children" element={<Products data={forChildren} />} />
-        {/* <Route path="/for_men" element={<ForMen />} /> */}
+        {clothesPages.map((item) => {
+          return (
+            <Route
+              key={item.id}
+              path={item.path}
+              element={<Products data={item.data} />}
+            />
+          );
+        })}
+
         <Route path="/new" element={<New />} />
         <Route path="/partner" element={<Partner />} />
         <Route path="/delivery" element={<Delivery />} />
@@ -52,7 +85,7 @@ export function Router() {
         <Route path="/my_cart" element={<Cart />} />
         <Route path="/my_orders" element={<Orders />} />
         <Route path="/my_profile" element={<MyProfile />} />
-        {/* <Route path="/" element={<Home />} /> */}
+        <Route path="*" element={<NotFoundPage />} />
       </Routes>
 
       <Login />
