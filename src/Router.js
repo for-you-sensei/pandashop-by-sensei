@@ -65,6 +65,6 @@ export function Router() {
   );
 }
 
-// register, login, forgot password, search, product fillter, product view
+// product fillter, product view
 
-// my profile + update pass
+// my profile + update pass, search
