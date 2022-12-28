@@ -16,6 +16,8 @@ import { MyProfile } from "./Pages/MyProfile/MyProfile";
 import { Products } from "./Pages/Products/Products";
 // import { ForMen } from "./Pages/For_Men/For_Men";
 import { useSelector } from "react-redux";
+import { Register } from "./Components/Register/Register";
+import { ForgotPassword } from "./Components/ForgotPassword/ForgotPassword";
 
 export function Router() {
   const product = useSelector((state) => state.product);
@@ -54,6 +56,8 @@ export function Router() {
       </Routes>
 
       <Login />
+      <Register />
+      <ForgotPassword />
       <Footer />
       {/* <Loading /> */}
       <Config />

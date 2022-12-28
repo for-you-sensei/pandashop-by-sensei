@@ -1,6 +1,7 @@
 #login-menu {
   width: 100%;
   height: 100vh;
+  overflow: auto;
   position: fixed;
   display: flex;
   justify-content: center;
@@ -105,7 +106,7 @@
 
   font-weight: 400;
   font-size: 20px;
-  line-height: 24px;
+  line-height: 124%;
   color: #ffffff;
 
   transition: 0.3s all ease-in-out;
@@ -131,4 +132,47 @@
 
 .login-menu-actions > p {
   cursor: pointer;
+}
+
+@media (max-width: 550px) {
+  .login-menu-form {
+    max-width: 100%;
+    width: 400px;
+    padding: 30px 10%;
+
+    font-size: 18px;
+  }
+
+  .login-menu-form > input {
+    height: 40px;
+    padding: 3%;
+
+    font-size: 16px;
+  }
+
+  .login-menu-close > svg {
+    width: 20px;
+    height: 30px;
+  }
+
+  .login-menu-form > label {
+    gap: 10px;
+
+    font-size: 14px;
+  }
+
+  .login-menu-form > label > input {
+    width: 15px;
+    height: 15px;
+  }
+
+  .login-menu-submit {
+    height: 40px;
+    font-size: 18px;
+  }
+
+  .login-menu-actions {
+    margin-top: 8px;
+    font-size: 12px;
+  }
 }

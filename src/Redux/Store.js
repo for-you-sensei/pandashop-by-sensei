@@ -1,13 +1,17 @@
 import { configureStore } from "@reduxjs/toolkit";
 import { combineReducers } from "redux";
+import { reForgotPass } from "./ForgotPassword";
 import { reLoading } from "./Loading";
 import { reLogin } from "./Login";
 import { reMenu } from "./MenuButton";
 import { reProduct } from "./Product";
+import { reRegister } from "./Register";
 
 const reducer = combineReducers({
   loading: reLoading,
   login: reLogin,
+  register: reRegister,
+  forgotPass: reForgotPass,
   menu: reMenu,
   product: reProduct,
 });

@@ -1,33 +1,32 @@
 import React from "react";
-import "./Login.css";
 import { useDispatch, useSelector } from "react-redux";
-import { acLogin } from "../../Redux/Login";
 import { PatternFormat } from "react-number-format";
 import CloseIcon from "@mui/icons-material/Close";
 import { acRegister } from "../../Redux/Register";
-import { acForgotPass } from "../../Redux/ForgotPassword";
+import { acLogin } from "../../Redux/Login";
 
-export function Login() {
-  const login = useSelector((state) => state.login);
-  const forgotPass = useSelector((state) => state.forgotPass);
-  const register = useSelector((state) => state.register);
-
+export function Register() {
   const dispatch = useDispatch();
 
+  const register = useSelector((state) => state.register);
+  const login = useSelector((state) => state.login);
+
   return (
-    <div id={login ? "login-menu" : "login-menu-false"}>
+    <div id={register ? "login-menu" : "login-menu-false"}>
       <form className="login-menu-form">
         <button
           className="login-menu-close"
           onClick={(e) => {
             e.preventDefault();
-            dispatch(acLogin(!login));
+            dispatch(acRegister(!register));
           }}
         >
           <CloseIcon />
         </button>
 
         <p>Pandashop.Uz</p>
+
+        <input type="text" placeholder="Full Name" />
 
         <PatternFormat
           // value={phone}
@@ -42,30 +41,16 @@ export function Login() {
 
         <input type="text" placeholder="Password" />
 
-        <label>
-          <input type="checkbox" />
-          Remember Me
-        </label>
-
-        <button className="login-menu-submit">Log In</button>
+        <button className="login-menu-submit">Register</button>
 
         <div className="login-menu-actions">
           <p
             onClick={() => {
-              dispatch(acLogin(!login));
-              dispatch(acForgotPass(!forgotPass));
-            }}
-          >
-            Forgot Password?
-          </p>
-
-          <p
-            onClick={() => {
-              dispatch(acLogin(!login));
               dispatch(acRegister(!register));
+              dispatch(acLogin(!login));
             }}
           >
-            Register Now
+            Login
           </p>
         </div>
       </form>

@@ -9,6 +9,7 @@ import { acMenu } from "../../Redux/MenuButton";
 import { acLogin } from "../../Redux/Login";
 import { NavbarMenu } from "./NavbarMenu";
 import MenuIcon from "@mui/icons-material/Menu";
+import { acRegister } from "../../Redux/Register";
 
 export function Navbar() {
   const [profile, setProfile] = useState(false);
@@ -17,6 +18,7 @@ export function Navbar() {
   const dispatch = useDispatch();
   const menu = useSelector((state) => state.menu);
   const login = useSelector((state) => state.login);
+  const register = useSelector((state) => state.register);
 
   const headerIcons = [
     {
@@ -101,7 +103,13 @@ export function Navbar() {
             >
               Log In
             </button>
-            <button>Register</button>
+            <button
+              onClick={() => {
+                dispatch(acRegister(!register));
+              }}
+            >
+              Register
+            </button>
           </div>
         </div>
       </div>
