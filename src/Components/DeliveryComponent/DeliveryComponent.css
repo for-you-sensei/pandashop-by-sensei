@@ -1,6 +1,7 @@
 #deliveryComponent {
   width: 100%;
-  padding: 50px 15%;
+  min-height: 60vh;
+  padding: 50px 20%;
   display: flex;
   flex-direction: column;
   align-items: center;
