@@ -6,8 +6,11 @@ import { PatternFormat } from "react-number-format";
 import CloseIcon from "@mui/icons-material/Close";
 import { acRegister } from "../../Redux/Register";
 import { acForgotPass } from "../../Redux/ForgotPassword";
+import { useNavigate } from "react-router-dom";
 
 export function Login() {
+  const navigate = useNavigate();
+
   const login = useSelector((state) => state.login);
   const forgotPass = useSelector((state) => state.forgotPass);
   const register = useSelector((state) => state.register);
@@ -47,7 +50,16 @@ export function Login() {
           Remember Me
         </label>
 
-        <button className="login-menu-submit">Log In</button>
+        <button
+          className="login-menu-submit"
+          onClick={(e) => {
+            // e.preventDefault();
+            navigate("/my_profile");
+            // dispatch(acLogin(!login));
+          }}
+        >
+          Log In
+        </button>
 
         <div className="login-menu-actions">
           <p

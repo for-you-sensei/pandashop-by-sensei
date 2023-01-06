@@ -14,7 +14,6 @@ import { Cart } from "./Pages/Cart/Cart";
 import { Orders } from "./Pages/Orders/Orders";
 import { MyProfile } from "./Pages/MyProfile/MyProfile";
 import { Products } from "./Pages/Products/Products";
-// import { ForMen } from "./Pages/For_Men/For_Men";
 import { useSelector } from "react-redux";
 import { Register } from "./Components/Register/Register";
 import { ForgotPassword } from "./Components/ForgotPassword/ForgotPassword";
@@ -59,6 +58,49 @@ export function Router() {
     },
   ];
 
+  const Pages = [
+    {
+      id: 0,
+      path: "/new",
+      element: <New />,
+    },
+    {
+      id: 1,
+      path: "/partner",
+      element: <Partner />,
+    },
+    {
+      id: 2,
+      path: "/delivery",
+      element: <Delivery />,
+    },
+    {
+      id: 3,
+      path: "/contact",
+      element: <Contact />,
+    },
+    {
+      id: 4,
+      path: "/my_cart",
+      element: <Cart />,
+    },
+    {
+      id: 5,
+      path: "/my_orders",
+      element: <Orders />,
+    },
+    {
+      id: 6,
+      path: "/my_profile",
+      element: <MyProfile />,
+    },
+    {
+      id: 7,
+      path: "*",
+      element: <NotFoundPage />,
+    },
+  ];
+
   return (
     <div id="router">
       <div className="router-nav">
@@ -78,14 +120,11 @@ export function Router() {
           );
         })}
 
-        <Route path="/new" element={<New />} />
-        <Route path="/partner" element={<Partner />} />
-        <Route path="/delivery" element={<Delivery />} />
-        <Route path="/contact" element={<Contact />} />
-        <Route path="/my_cart" element={<Cart />} />
-        <Route path="/my_orders" element={<Orders />} />
-        <Route path="/my_profile" element={<MyProfile />} />
-        <Route path="*" element={<NotFoundPage />} />
+        {Pages.map((item) => {
+          return (
+            <Route key={item.id} path={item.path} element={item.element} />
+          );
+        })}
       </Routes>
 
       <Login />
