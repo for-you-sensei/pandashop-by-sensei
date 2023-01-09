@@ -53,9 +53,9 @@ export function Login() {
         <button
           className="login-menu-submit"
           onClick={(e) => {
-            // e.preventDefault();
+            e.preventDefault();
             navigate("/my_profile");
-            // dispatch(acLogin(!login));
+            dispatch(acLogin(!login));
           }}
         >
           Log In

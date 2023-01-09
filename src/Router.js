@@ -18,6 +18,7 @@ import { useSelector } from "react-redux";
 import { Register } from "./Components/Register/Register";
 import { ForgotPassword } from "./Components/ForgotPassword/ForgotPassword";
 import { NotFoundPage } from "./Components/NotFoundPage/NotFoundPage";
+import { ProductView } from "./Pages/ProductView/ProductView";
 
 export function Router() {
   const product = useSelector((state) => state.product);
@@ -96,6 +97,11 @@ export function Router() {
     },
     {
       id: 7,
+      path: "/product_view/:id",
+      element: <ProductView />,
+    },
+    {
+      id: 8,
       path: "*",
       element: <NotFoundPage />,
     },

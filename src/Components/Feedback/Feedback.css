@@ -69,8 +69,7 @@ input {
   gap: 15px;
 }
 
-.feedback-form-inputs > input,
-button {
+.feedback-form-inputs > input {
   width: 100%;
   height: 100%;
   padding: 10px;
@@ -81,6 +80,10 @@ button {
 }
 
 .feedback-form-inputs > button {
+  width: 100%;
+  height: 100%;
+  padding: 10px;
+
   font-weight: 500;
   font-size: 20px;
   line-height: 150%;
@@ -123,12 +126,13 @@ button {
     gap: 10px;
   }
 
-  .feedback-form-inputs > input,
-  button {
+  .feedback-form-inputs > input {
     padding: 10px;
   }
 
   .feedback-form-inputs > button {
+    padding: 10px;
+
     font-size: 18px;
   }
 }
@@ -168,8 +172,7 @@ button {
     gap: 10px;
   }
 
-  .feedback-form-inputs > input,
-  button {
+  .feedback-form-inputs > input {
     padding: 10px;
   }
 
@@ -178,6 +181,8 @@ button {
   }
 
   .feedback-form-inputs > button {
+    padding: 10px;
+
     font-size: 18px;
   }
 }
@@ -210,12 +215,13 @@ button {
     gap: 5px;
   }
 
-  .feedback-form-inputs > input,
-  button {
+  .feedback-form-inputs > input {
     padding: 5px;
   }
 
   .feedback-form-inputs > button {
+    padding: 5px;
+
     font-size: 12px;
   }
 }

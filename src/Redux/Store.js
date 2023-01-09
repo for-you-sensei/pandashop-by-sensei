@@ -1,5 +1,6 @@
 import { configureStore } from "@reduxjs/toolkit";
 import { combineReducers } from "redux";
+import { reFilter } from "./Filter";
 import { reForgotPass } from "./ForgotPassword";
 import { reLoading } from "./Loading";
 import { reLogin } from "./Login";
@@ -10,6 +11,7 @@ import { reRegister } from "./Register";
 const reducer = combineReducers({
   loading: reLoading,
   login: reLogin,
+  filter: reFilter,
   register: reRegister,
   forgotPass: reForgotPass,
   menu: reMenu,
