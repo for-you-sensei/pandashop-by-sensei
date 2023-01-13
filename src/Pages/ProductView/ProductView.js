@@ -16,4 +16,4 @@ export function ProductView() {
   );
 }
 
-// Pagination sizes
+// Pagination's card sizes
