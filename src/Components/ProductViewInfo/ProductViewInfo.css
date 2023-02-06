@@ -80,7 +80,6 @@
 }
 
 .ProductViewInfo-sizes {
-  width: 50%;
   display: flex;
   flex-direction: row;
   flex-wrap: wrap;
@@ -99,7 +98,7 @@
   border-radius: 5px;
 
   font-weight: 500;
-  font-size: 14px;
+  font-size: var(--fs14);
   line-height: 110%;
   color: #41416e;
 }
@@ -107,6 +106,11 @@
 .ProductViewInfo-sizes > button:hover {
   background: #41416e;
   color: #fff;
+}
+
+.ProductViewInfo-sizes :last-child {
+  font-weight: 500;
+  font-size: var(--fs24);
 }
 
 .ProductViewInfo-actions {
@@ -118,7 +122,7 @@
 }
 
 .ProductViewInfo-about-addToCart {
-  width: 40%;
+  width: 45%;
   height: 55px;
   outline: none;
   border: none;
@@ -139,7 +143,7 @@
 }
 
 .ProductViewInfo-count {
-  width: 15%;
+  width: 200px;
   height: 55px;
   display: flex;
   flex-direction: row;
@@ -157,7 +161,7 @@
   justify-content: center;
 
   font-weight: 500;
-  font-size: 24px;
+  font-size: var(--fs24);
   line-height: 120%;
 
   color: #ffffff;
@@ -174,8 +178,156 @@
   background: #41416e;
 
   font-weight: 500;
-  font-size: 36px;
+  font-size: var(--fs32);
   line-height: 120%;
 
   color: #ffffff;
+}
+
+@media (max-width: 1100px) {
+  .ProductViewInfo-images {
+    width: 40%;
+    gap: 10px;
+  }
+
+  .ProductViewInfo-about {
+    width: 55%;
+    gap: 15px;
+  }
+
+  .ProductViewInfo-about-info {
+    gap: 15px;
+  }
+
+  .ProductViewInfo-sizes {
+    gap: 10px;
+  }
+
+  .ProductViewInfo-sizes > button {
+    padding: 5px 10px;
+  }
+
+  .ProductViewInfo-actions {
+    width: 100%;
+    gap: 2%;
+  }
+
+  .ProductViewInfo-about-addToCart {
+    height: 45px;
+  }
+
+  .ProductViewInfo-count {
+    width: 160px;
+    height: 45px;
+  }
+}
+
+@media (max-width: 850px) {
+  .ProductViewInfo-images {
+    width: 35%;
+    gap: 2px;
+  }
+
+  .ProductViewInfo-about {
+    width: 60%;
+    gap: 7px;
+  }
+
+  .ProductViewInfo-about-info {
+    gap: 7px;
+  }
+
+  .ProductViewInfo-sizes {
+    gap: 7px;
+  }
+
+  .ProductViewInfo-sizes > button {
+    padding: 2px 8px;
+  }
+
+  .ProductViewInfo-about-addToCart {
+    height: 38px;
+  }
+
+  .ProductViewInfo-count {
+    width: 140px;
+    height: 38px;
+  }
+}
+
+@media (max-width: 650px) {
+  #ProductViewInfo {
+    flex-direction: column;
+    justify-content: center;
+    gap: 20px;
+  }
+
+  .ProductViewInfo-images {
+    width: 60%;
+    gap: 2px;
+  }
+
+  .ProductViewInfo-about {
+    width: 90%;
+    gap: 10px;
+  }
+
+  .ProductViewInfo-about-info {
+    gap: 10px;
+  }
+
+  .ProductViewInfo-sizes {
+    gap: 10px;
+  }
+
+  .ProductViewInfo-sizes > button {
+    padding: 2px 8px;
+  }
+
+  .ProductViewInfo-about-addToCart {
+    width: 45%;
+    height: 40px;
+  }
+
+  .ProductViewInfo-count {
+    width: 160px;
+    height: 40px;
+  }
+}
+
+@media (max-width: 400px) {
+  #ProductViewInfo {
+    gap: 15px;
+  }
+
+  .ProductViewInfo-images {
+    width: 70%;
+    gap: 2px;
+  }
+
+  .ProductViewInfo-about {
+    width: 90%;
+    gap: 5px;
+  }
+
+  .ProductViewInfo-about-info {
+    gap: 5px;
+  }
+
+  .ProductViewInfo-sizes {
+    gap: 8px;
+  }
+
+  .ProductViewInfo-sizes > button {
+    padding: 2px 6px;
+  }
+
+  .ProductViewInfo-about-addToCart {
+    height: 30px;
+  }
+
+  .ProductViewInfo-count {
+    width: 100px;
+    height: 30px;
+  }
 }

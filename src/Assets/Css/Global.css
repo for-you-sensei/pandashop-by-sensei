@@ -1,6 +1,7 @@
 :root {
   --fs32: 32px;
   --fs24: 24px;
+  --fs14: 14px;
 }
 
 @font-face {
@@ -81,4 +82,36 @@ input::-webkit-inner-spin-button {
 ::-webkit-scrollbar-thumb {
   background: rgb(136, 136, 136);
   border-radius: 10px;
+}
+
+@media (max-width: 1100px) {
+  :root {
+    --fs32: 28px;
+    --fs24: 20px;
+    --fs14: 14px;
+  }
+}
+
+@media (max-width: 850px) {
+  :root {
+    --fs32: 24px;
+    --fs24: 16px;
+    --fs14: 10px;
+  }
+}
+
+@media (max-width: 850px) {
+  :root {
+    --fs32: 22px;
+    --fs24: 14px;
+    --fs14: 10px;
+  }
+}
+
+@media (max-width: 400px) {
+  :root {
+    --fs32: 18px;
+    --fs24: 10px;
+    --fs14: 8px;
+  }
 }

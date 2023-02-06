@@ -104,14 +104,22 @@ export function ProductViewInfo() {
         <div className="ProductViewInfo-actions">
           <div className="ProductViewInfo-count">
             <button
-            // onClick={() => {}}
+              onClick={() => {
+                setCount(count + 1);
+
+                // setCount(productData.count ++); all product counts 0
+              }}
             >
               +
             </button>
 
             <p>{count}</p>
 
-            <button>-</button>
+            <button
+            // not ended
+            >
+              -
+            </button>
           </div>
 
           <button
