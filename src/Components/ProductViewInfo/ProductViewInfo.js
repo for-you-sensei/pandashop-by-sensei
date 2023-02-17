@@ -116,7 +116,9 @@ export function ProductViewInfo() {
             <p>{count}</p>
 
             <button
-            // not ended
+              onClick={() => {
+                setCount(count === 1 ? 1 : count - 1);
+              }}
             >
               -
             </button>

@@ -5,6 +5,30 @@ import Slider from "react-slick";
 import "slick-carousel/slick/slick.css";
 import "slick-carousel/slick/slick-theme.css";
 
+function SampleNextArrow(props) {
+  const { className, style, onClick } = props;
+  return (
+    <div
+      className={className}
+      // style={{ ...style, display: "block", right: "2%", zIndex: "999", }}
+      style={{ ...style, display: "none" }}
+      onClick={onClick}
+    />
+  );
+}
+
+function SamplePrevArrow(props) {
+  const { className, style, onClick } = props;
+  return (
+    <div
+      className={className}
+      // style={{ ...style, display: "block", left: "2%", zIndex: "999", }}
+      style={{ ...style, display: "none" }}
+      onClick={onClick}
+    />
+  );
+}
+
 export function HomeCarousel() {
   const data = [
     {
@@ -33,8 +57,10 @@ export function HomeCarousel() {
     autoplay: true,
     speed: 500,
     autoplaySpeed: 6000,
+    nextArrow: <SampleNextArrow />,
+    prevArrow: <SamplePrevArrow />,
   };
-  
+
   return (
     <div id="home-carousel">
       <Slider {...settings} className="home-slick">
@@ -48,12 +74,4 @@ export function HomeCarousel() {
       </Slider>
     </div>
   );
-
-  // return (
-  //   <div id="home-carousel">
-  //     <figure className="home-carousel-figure">
-  //       <img src={img1} alt="" />
-  //     </figure>
-  //   </div>
-  // );
 }

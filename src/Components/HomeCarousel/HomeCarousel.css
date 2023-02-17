@@ -1,11 +1,6 @@
 #home-carousel {
   width: 100%;
   display: block;
-  overflow: hidden;
-}
-
-.home-slider {
-  width: 100%;
 }
 
 .home-carousel-figure {
