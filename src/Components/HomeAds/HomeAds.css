@@ -38,7 +38,7 @@
   color: #41416e;
 }
 
-.HomeAds-discaunt {
+.HomeAds-discount {
   z-index: 99;
   position: absolute;
   top: 2%;
@@ -82,7 +82,7 @@
 }
 
 @media (max-width: 1250px) {
-  .HomeAds-discaunt {
+  .HomeAds-discount {
     width: 40px;
     height: 40px;
     font-size: 14px;
@@ -126,7 +126,7 @@
     font-size: 26px;
   }
 
-  .HomeAds-discaunt {
+  .HomeAds-discount {
     width: 40px;
     height: 40px;
     font-size: 14px;
@@ -152,7 +152,7 @@
     font-size: 20px;
   }
 
-  .HomeAds-discaunt {
+  .HomeAds-discount {
     width: 25px;
     height: 25px;
     font-size: 8px;
@@ -178,7 +178,7 @@
     font-size: 14px;
   }
 
-  .HomeAds-discaunt {
+  .HomeAds-discount {
     width: 20px;
     height: 20px;
     font-size: 6px;

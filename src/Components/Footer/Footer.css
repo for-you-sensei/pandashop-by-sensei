@@ -70,10 +70,17 @@
   gap: 5px;
 }
 
-.footer-texts-2 > p {
+.footer-texts-2 > p,
+.footer-texts-2 > a {
+  color: #fff;
+
   font-weight: 500;
   font-size: 15px;
   line-height: 120%;
+}
+
+.footer-texts-2 > a:hover {
+  color: #f44336;
 }
 
 .footer-texts-2 > :first-child {

@@ -12,12 +12,12 @@ export function HomeAds({ data, name, link }) {
           return (
             <div className="HomeAds-card" key={item.id}>
               <div
-                className="HomeAds-discaunt"
+                className="HomeAds-discount"
                 style={
-                  item.discaunt > 0 ? { display: "flex" } : { display: "none" }
+                  item.discount > 0 ? { display: "flex" } : { display: "none" }
                 }
               >
-                {item.discaunt}%
+                {item.discount}%
               </div>
 
               <figure className="HomeAds-figure">

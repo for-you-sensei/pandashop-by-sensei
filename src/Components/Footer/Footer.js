@@ -2,6 +2,7 @@ import React from "react";
 import "./Footer.css";
 import logo from "../../Assets/Icons/Footer/Ellipse 12.png";
 import LanguageIcon from "@mui/icons-material/Language";
+import { NavLink } from "react-router-dom";
 
 export function Footer() {
   return (
@@ -14,26 +15,26 @@ export function Footer() {
 
           <div className="footer-texts-1">
             <p>PandaShop.Uz</p>
-            <p>Online savdo platformasi</p>
-            <p>Barcha xuquqlar ximoyalangan</p>
+            <p>Online trading platform</p>
+            <p>All rights reserved</p>
             <p>2022 yil</p>
           </div>
         </div>
 
         <div className="footer-texts-2">
           <p>Departments</p>
-          <p>All Products</p>
-          <p>My Cart</p>
-          <p>New Products</p>
-          <p>Most Popular</p>
+          <NavLink to="/all_products">All Products</NavLink>
+          <NavLink to="/my_cart">My Cart</NavLink>
+          <NavLink to="/new">New Products</NavLink>
+          <NavLink to="/most_popular">Most Popular</NavLink>
         </div>
 
         <div className="footer-texts-2">
           <p>About Us</p>
-          <p>Contact Us</p>
-          <p>Partners</p>
-          <p>Delivery</p>
-          <p>Address</p>
+          <NavLink to="/contact">Contact Us</NavLink>
+          <NavLink to="/partner">Partners</NavLink>
+          <NavLink to="/delivery">Delivery</NavLink>
+          <NavLink to="/contact">Address</NavLink>
         </div>
 
         <div className="footer-texts-2">

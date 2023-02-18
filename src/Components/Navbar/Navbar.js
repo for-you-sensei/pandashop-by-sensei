@@ -47,7 +47,7 @@ export function Navbar() {
             </div>
           </div>
 
-          <NavLink to="/discaunts">Discaunts</NavLink>
+          <NavLink to="/discounts">Discounts</NavLink>
 
           <div className="drop-down-card">
             <NavLink to="/all_products">More </NavLink>
