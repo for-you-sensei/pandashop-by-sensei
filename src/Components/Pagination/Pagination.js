@@ -6,7 +6,7 @@ import { ChevronLeft, ChevronRight } from "@mui/icons-material";
 
 function Pagination({ data }) {
   const [pageNUmber, setPageNumber] = useState(0);
-  const usersPerPage = 12;
+  const usersPerPage = `12`;
   const pagesVisited = pageNUmber * usersPerPage;
   const pageCount = Math.ceil(data.length / usersPerPage);
 

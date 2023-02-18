@@ -4,7 +4,7 @@
   display: flex;
   flex-direction: column;
   align-items: center;
-  overflow: auto;
+  overflow-y: scroll;
   gap: 10px;
 }
 
@@ -24,13 +24,12 @@
 .myOrders-figure {
   width: 100px;
   height: 100%;
-  border-radius: 10px 0 0 10px;
-  overflow: hidden;
 }
 
 .myOrders-figure > img {
   width: 100%;
   height: 100%;
+  border-radius: 10px 0 0 10px;
 }
 
 .myOrders-info {

@@ -111,8 +111,8 @@ export function Router() {
     <div id="router">
       <div className="router-nav">
         <Header />
-        <Navbar />
       </div>
+      <Navbar />
 
       <Routes>
         <Route path="/" element={<Home />} />
@@ -143,6 +143,6 @@ export function Router() {
   );
 }
 
-// product fillter, footer css margin top
+// product fillter, footer links
 
 // my profile + update pass, search

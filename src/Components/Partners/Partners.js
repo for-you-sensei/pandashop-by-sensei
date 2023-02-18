@@ -75,11 +75,13 @@ export function Partners() {
     centerMode: true,
     infinite: true,
     // dots: true,
+    slidesToScroll: 1,
+    slidesToShow: 5,
+    autoplay: true,
+    speed: 1500,
+    autoplaySpeed: 6000,
     nextArrow: <SampleNextArrow />,
     prevArrow: <SamplePrevArrow />,
-    centerPadding: "60px",
-    slidesToShow: 5,
-    speed: 500,
     // appendDots: (dots) => (
     //   <div className="partner-dots-container">
     //     <ul style={{ margin: "0px" }}> {dots} </ul>

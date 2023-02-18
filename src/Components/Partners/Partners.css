@@ -14,7 +14,7 @@
   height: 100%;
   text-align: center;
   padding-top: 40px;
-  overflow: hidden;
+  /* overflow: hidden; */
 }
 
 #partner-carousel > p {
